@@ -13,10 +13,14 @@
     */
 
     //Entrada
-
+const dias = prompt("quantos dias de atrasso foi paga a conta ?")
     
     //Processamento
-
+let final = (dias === 0 ) ? alert(`o custo da  multa sera de $ 0,00`)
+: (dias <= 10 )? alert(`o custo da multa sera de $${dias * 2.50}`)
+: (dias <= 20 )? alert(`o custo da multa sera de $${dias * 4.00}`)
+: (dias > 20 )? alert(`o custo da multa sera de $${dias * 4.50}`)
+: alert("valor invalido")
     
     //Saída
 

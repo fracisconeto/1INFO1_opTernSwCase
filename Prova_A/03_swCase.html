@@ -9,15 +9,34 @@
     - Se informou "(TL)10 Litros", o programa deverá apresentar a mensagem "Dez litros de água: R$ 20,00".
     Crie também um default que retornará a mensagem "Opção de compra inválida".
 
-    DICA: Use CP para Capuccino, EX para Expresso e GA para Galão.
+   
     */
 
     //Entrada
+    const tamanho = prompt("informe o tamanho da garrafa de água(bo para Bottle ,lt para litro , fl para cinco litros  e tl para 10 litros   )  ")
 
-    
     //Processamento
 
-    
+    switch (tamanho) {
+        case "bo":
+            alert("a garrafa de água custa R$ 5,00");
+
+            break;
+
+        case "lt":
+            alert(" a garrafa de agua custa R$9,00");
+            break;
+
+        case "fl":
+            alert("a garrafa de água custa R$ 15,00");
+            break
+        case "tl":
+            alert("a garrafa de água custa R$20,00");
+            break
+        default:
+            alert("Opção de compra inválida")
+            break;
+    }
     //Saída
 
     /*

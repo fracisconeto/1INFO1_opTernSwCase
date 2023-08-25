@@ -11,11 +11,13 @@
     */
 
     //Entrada
-
-
+const preço = Number(prompt("quanto vc deseja pagar no tablet? ").trim())
+const parcelas = Number(prompt("quantas parcelas deseja comprar?").trim())
     //Processamento
-
-    
+let final = (parcelas === 1 ) ? alert(`o preço sera de $${preço}`)
+: (parcelas <= 5 ) ? alert(`o preço sera de $${preço * 1.03 } `)
+: (parcelas > 5  ) ? alert(`o preço sera de $${preço * 1.07 } `)
+: alert("valor invalido ")
     //Saída
 
     /*
